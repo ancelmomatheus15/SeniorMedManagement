@@ -13,7 +13,7 @@ zenbo_speakSpeed = 100
 zenbo_speakPitch = 100
 zenbo_speakLanguage = 100
 
-zenbo.robot.set_expression(RobotFace.DEFAULT, "Hello there, how you doing? I am Zenbo and I'm here to help.", {'speed':zenbo_speakSpeed, 'pitch':zenbo_speakPitch, 'languageId':zenbo_speakLanguage} , sync = True)
+zenbo.robot.set_expression(RobotFace.DEFAULT, "Hello there, how you doing? I am Zenbo and I'm here to help!", {'speed':zenbo_speakSpeed, 'pitch':zenbo_speakPitch, 'languageId':zenbo_speakLanguage} , sync = True)
 
 zenbo.robot.set_expression(RobotFace.HIDEFACE)
 
