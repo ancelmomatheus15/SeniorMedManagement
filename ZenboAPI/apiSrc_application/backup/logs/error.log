@@ -1,0 +1,12 @@
+Receiver socket connect failed
+Sender socket connect failed
+Traceback (most recent call last):
+  File "/var/www/ElderMedManagement/zenboPack/zenboAppointmentCheck.py", line 100, in <module>
+    resposta = procAnswer(myUtterance)
+NameError: name 'myUtterance' is not defined
+Receiver not stopped
+Receiver not stopped
+Receiver not stopped
+[Sat Dec 04 18:56:30.880571 2021] [wsgi:error] [pid 3233:tid 1845462048] [client 34.239.157.89:36276] Timeout when reading response headers from daemon process 'elderMedMngm': /var/www/ElderMedManagement/ZenboAPI/apiSrc_application/app.wsgi
+[Sat Dec 04 18:57:49.505177 2021] [wsgi:error] [pid 3233:tid 1837069344] [client 34.239.157.89:36290] Timeout when reading response headers from daemon process 'elderMedMngm': /var/www/ElderMedManagement/ZenboAPI/apiSrc_application/app.wsgi
+[Sat Dec 04 18:59:24.314002 2021] [wsgi:error] [pid 3234:tid 1912595488] [client 192.168.1.8:49317] Timeout when reading response headers from daemon process 'elderMedMngm': /var/www/ElderMedManagement/ZenboAPI/apiSrc_application/app.wsgi

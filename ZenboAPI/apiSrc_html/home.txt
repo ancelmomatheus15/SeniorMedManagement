@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+	.collapsible {
+	  background-color: #777;
+	  color: white;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	}
+
+	.active, .collapsible:hover {
+	  background-color: #555;
+	}
+
+	.content {
+	  padding: 0 18px;
+	  display: none;
+	  overflow: hidden;
+	  background-color: #f1f1f1;
+	}
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Funcoes</h1>
+<!-- ======================================================================================================================= -->			
+	<div>
+		<h3>Funcoes de Usuario</h3>
+
+			<button type="button" class="collapsible">Create </button>
+			<div class="content">
+				<ul>
+					<li> [POST] /api/data/users/create -> Registra um novo usuario <br>
+
+						<textarea rows="9" cols="50" style="height: 300px; margin-top: 10px;" disabled="true">
+							{
+							    "name" : "",
+							    "birthDate" : "",
+							    "city" : "",
+							    "country" : "",
+							    "gender" : "",
+							    "phone" : "",
+							    "mail" : ""
+							} 
+						</textarea>
+
+					</li>	
+
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Update </button>
+			<div class="content">
+				<ul>
+					<li>[PUT] /api/data/users/update -> Atualizar um usuario <br>
+
+							<textarea rows="9" cols="50" style="height: 320px; margin-top: 10px;" disabled="true">
+							{
+							    "usrId" : "",
+							    "name" : "",
+							    "birthDate" : "",
+							    "city" : "",
+							    "country" : "",
+							    "gender" : "",
+							    "phone" : "",
+							    "mail" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  /api/data/users/all -> listar todos os registros</li>
+					<li>[GET]  /api/data/users/id?id={id}  -> buscar um registro pelo id </li>
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Delete </button>
+			<div class="content">
+				<ul>
+					<li> [DELETE] /api/data/user/delete/	-> Exclui um Usuario <br>
+
+						<textarea rows="9" cols="50" style="height: 120px; margin-top: 10px;" disabled="true">
+							{
+							    "id" : "id"
+							}
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+	</div>
+<!-- ======================================================================================================================= -->
+	<div>
+		<h3>Funcoes de Medicamento</h3>
+
+			<button type="button" class="collapsible">Create </button>
+			<div class="content">
+				<ul>
+					<li>[POST] /api/data/medication/create -> Registra um novo medicamento<br>
+
+						<textarea rows="9" cols="50" style="height: 300px; margin-top: 10px;" disabled="true">
+							{
+							    "name" : "",
+							    "dosage" : "",
+							    "frequency" : "",
+							    "description" : ""
+							}  
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Update </button>
+			<div class="content">
+				<ul>
+					<li>[PUT] /api/data/medication/update -> Atualizar um medicamento<br>
+
+							<textarea rows="9" cols="50" style="height: 320px; margin-top: 10px;" disabled="true">
+							{
+							    "medicationId" : "",
+							    "name" : "",
+							    "dosage" : "",
+							    "frequency" : "",
+							    "description" : ""
+							}
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  /api/data/medication/all -> listar todos os medicamentos</li>
+					<li>[GET]  /api/data/medication/id?id={id}  -> buscar um medicamento pelo id </li>
+					<li>[GET]  /api/data/medication/name?name={name}  -> buscar um medicamento pelo nome </li>
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Delete </button>
+			<div class="content">
+				<ul>
+					<li> [DELETE] /api/data/medication/delete/	-> Exclui um Medicamento <br>
+
+						<textarea rows="9" cols="50" style="height: 120px; margin-top: 10px;" disabled="true">
+							{
+							    "id" : "id"
+							}
+						</textarea>
+
+					</li>
+				</ul>
+			</div>
+
+	</div>
+<!-- ======================================================================================================================= -->
+	<div>
+		<h3>Funcoes de Medico</h3>
+
+			<button type="button" class="collapsible">Create </button>
+			<div class="content">
+				<ul>
+					<li>[POST] /api/data/medic/create -> Registra um novo medico<br>
+
+						<textarea rows="9" cols="50" style="height: 300px; margin-top: 10px;" disabled="true">
+							{
+							    "name" : "",
+							    "specialty" : "",
+							    "addressStreet" : "",
+							    "addressNumber" : "",
+							    "addressZip" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Update </button>
+			<div class="content">
+				<ul>
+					<li> [PUT] /api/data/medic/update -> Atualiza um medico<br>
+
+							<textarea rows="9" cols="50" style="height: 320px; margin-top: 10px;" disabled="true">
+							{
+							    "medicId" : "",
+							    "name" : "",
+							    "specialty" : "",
+							    "addressStreet" : "",
+							    "addressNumber" : "",
+							    "addressZip" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  /api/data/medic/all -> listar todos os medicos</li>
+					<li>[GET]  /api/data/medic/id?id={id}  -> buscar um medico pelo id </li>
+					<li>[GET]  /api/data/medic/name?name={id}  -> buscar um medico pelo nome </li>
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Delete </button>
+			<div class="content">
+				<ul>
+					<li> [DELETE] /api/data/medic/delete/	-> Exclui um Médico <br>
+
+						<textarea rows="9" cols="50" style="height: 120px; margin-top: 10px;" disabled="true">
+							{
+							    "id" : "id"
+							}
+						</textarea>
+
+					</li>
+				</ul>
+			</div>
+
+	</div>
+<!-- ======================================================================================================================= -->
+	<div>
+		<h3>Funcoes de Hospital</h3>
+
+			<button type="button" class="collapsible">Create </button>
+			<div class="content">
+				<ul>
+					<li>[POST] /api/data/hospital/create -> Registra um novo hospital<br>
+
+						<textarea rows="9" cols="50" style="height: 300px; margin-top: 10px;" disabled="true">
+							{
+							    "name" : "",
+							    "addressStreet" : "",
+							    "addressNumber" : "",
+							    "addressZip" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Update </button>
+			<div class="content">
+				<ul>
+					<li> [PUT] /api/data/hospital/update -> Atualiza um hospital<br>
+
+							<textarea rows="9" cols="50" style="height: 320px; margin-top: 10px;" disabled="true">
+							{
+							    "hospitalId": "",
+							    "name" : "",
+							    "addressStreet" : "",
+							    "addressNumber" : "",
+							    "addressZip" : ""
+							}  
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  /api/data/hospital/all -> listar todos os hospitais</li> ok
+					<li>[GET]  /api/data/hospital/id?id={id}  -> buscar um hospital pelo id </li>
+					<li>[GET]  /api/data/hospital/name?name={id}  -> buscar um hospital pelo nome </li> ok
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Delete </button>
+			<div class="content">
+				<ul>
+					<li> [DELETE] /api/data/hospital/delete/ -> Exclui um hospital <br>
+
+						<textarea rows="9" cols="50" style="height: 120px; margin-top: 10px;" disabled="true">
+							{
+							    "id" : "id"
+							}
+						</textarea>
+
+					</li>
+				</ul>
+			</div>
+
+	</div>
+<!-- ======================================================================================================================= -->
+	<div>
+		<h3>Funcoes de Tratamento</h3>
+
+			<button type="button" class="collapsible">Create </button>
+			<div class="content">
+				<ul>
+					<li>[POST] /api/data/treatment/create -> Registra um novo tratamento<br>
+
+						<textarea rows="9" cols="50" style="height: 300px; margin-top: 10px;" disabled="true">
+							{
+							    "user" : "",
+							    "medication" : "",
+							    "data_inicio" : "",
+							    "data_fim" : "",
+							    "last_occurrence" : "",
+							    "medic" : "",
+							    "descricao" : "",
+							    "monitorado" : "",
+							    "atendido" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Update </button>
+			<div class="content">
+				<ul>
+					<li> [PUT] /api/data/treatment/update -> Atualiza um tratamento<br>
+
+							<textarea rows="9" cols="50" style="height: 320px; margin-top: 10px;" disabled="true">
+							{
+							    "treatmentId" : "",
+							    "user" : "",
+							    "medication" : "",
+							    "data_inicio" : "",
+							    "data_fim" : "",
+							    "last_occurrence" : "",
+							    "medic" : "",
+							    "descricao" : "",
+							    "monitorado" : "",
+							    "atendido" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  api/data/treatment/id?id=userId -> buscar tratamento pelo id do usuario </li> 
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Delete </button>
+			<div class="content">
+				<ul>
+					<li> [DELETE] /api/data/treatment/delete/ -> Exclui um tratamento <br>
+
+						<textarea rows="9" cols="50" style="height: 120px; margin-top: 10px;" disabled="true">
+							{
+							    "id" : "id"
+							}
+						</textarea>
+
+					</li>
+				</ul>
+			</div>
+
+	</div>
+<!-- ======================================================================================================================= -->
+	<div>
+		<h3>Funcoes de Consulta</h3>
+
+			<button type="button" class="collapsible">Create </button>
+			<div class="content">
+				<ul>
+					<li>[POST] /api/data/appointment/create -> Registra um novo compromisso<br>
+
+						<textarea rows="9" cols="50" style="height: 300px; margin-top: 10px;" disabled="true">
+							{
+								"user" : "",
+							    "hora" : "",
+							    "data" : "",
+							    "hospital" : "",
+							    "medic" : "",
+							    "descricao" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Update </button>
+			<div class="content">
+				<ul>
+					<li> [PUT] /api/data/appointment/update -> Atualiza uma consulta<br>
+
+							<textarea rows="9" cols="50" style="height: 320px; margin-top: 10px;" disabled="true">
+							{
+							    "appointmentId" : "",
+							    "hora" : "",
+							    "data" : "",
+							    "hospital" : "",
+							    "medic" : "",
+							    "descricao" : ""
+							} 
+						</textarea>
+
+					</li>	
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  api/data/appointment/id?id=userId -> buscar compromisso pelo id do usuario</li>
+					<li>[GET]  api/data/appointment/idDate?id=userId&date=date -> buscar compromisso pelo id do usuario e pela data (AAAA-MM-DD)</li>
+					<li>[GET]  api/data/appointment/week?id=userId -> buscar compromisso do usuario em um intervalo de 7 dias</li>
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Delete </button>
+			<div class="content">
+				<ul>
+					<li> [DELETE] /api/data/appointment/delete/ -> Exclui uma consulta <br>
+
+						<textarea rows="9" cols="50" style="height: 120px; margin-top: 10px;" disabled="true">
+							{
+							    "id" : "id"
+							}
+						</textarea>
+
+					</li>
+				</ul>
+			</div>
+
+	</div>
+
+<!-- ============================================================================================================================ -->
+
+	<div>
+		<h3>Funcoes Zenbo</h3>
+
+
+			<button type="button" class="collapsible">Read </button>
+			<div class="content">
+				<ul>
+					<li>[GET]  api/data/zenbo/awake -> Zenbo indica que está ativo</li>
+					<li>[GET]  api/data/zenbo/listAppointments/id?id=userId -> Zenbo lista os compromissos do dia</li>
+					<li>[GET]  api/data/zenbo/listWeekAppointments/id?id=userId -> Zenbo lista os compromissos da semana</li>
+					<li>[GET]  api/data/zenbo/listTreatments/id?id=userId -> Zenbo lista os tratamentos e os respectivos detalhes para um usuario</li>
+					<li>[GET]  api/data/zenbo/ingestMed?userId=userId&treatmentId=treatmentId -> Zenbo verifica se o usuario tomou os remedios de um tratamento</li>
+					<li>[GET]  api/data/zenbo/nextMedication/id?id=userId -> Zenbo lista os medicamentos de um usuario</li>
+				</ul>
+			</div>
+
+	</div>
+
+<!-- =========================================================SCRIPT============================================================= -->
+
+
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.display === "block") {
+	      content.style.display = "none";
+	    } else {
+	      content.style.display = "block";
+	    }
+	  });
+	}
+	</script>
+
+</body>
+</html>
